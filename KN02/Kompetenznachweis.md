@@ -11,4 +11,4 @@ Details der Web Server-Instanz (öffentliche IP sichtbar)
 
 
 Security-Group: Liste der Inbound-Regeln.
-![Inbound Regeln](image-3.png)
+![Inbound Regeln](image.png)
