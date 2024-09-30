@@ -27,6 +27,13 @@ Damit ich Geld spare, habe ich bei der E2 Instanz eine billigere Version gewähl
 - Kosten für Entwicklung/Veränderung der Software werden ignoriert
 
 ### Lösung
+Schätzung:
+![Estimate Replattforming Heroku](Estimate_Replattforming.png)
+
+Erklärung:
+Ich habe die gleichen Parameter wie bei Aufgabe 1 geachtet und mich schlussendlich für postgres als DB Instanz entschieden.
+Zusätzlich habe ich den Performance M Dyno gewählt, da nur dieser der nötigen leistung entspricht.
+
 
 ## 3) Repurchasing
 ### Ausgangslage 
