@@ -62,6 +62,7 @@ wie stark unterscheiden sich die Angebote?
 Die Angebote unterscheiden sich im Preis sowohl war es auf einigen Webseiten war es zusätzlich sehr mühsam die Sachen zu konfigurieren und die Websweite zu benutzen. Auch die Funktionen, Erweiterungen etc. sind bei den verschiedenen Angeboten unterschiedlich. Natürlich auch der Zeitaufwand, welcher mehr oder weniger sein kann je nach dem wie viel Budget man hat und was man für eine Art wählt.
 
 Welches ist das billigste/teurere normalerweise?
-Beim Vergleich von AWS und Azure ist AWS die günstigere Variante von den beiden. Ich finde Azure auch einfach zu benützen als AWS. Jedoch denke ich es kommt auf den User, die Erfahrung und die Präferenzen an. Beim Vergleich von Zoho und Salescloud ist Zoho billiger. Wie schon erwähnt würde ich persönlich aber trotzdem Salescloud wählen da es erweiterte Funktionalitäten bietet. 
+Beim Vergleich von AWS und Azure ist AWS eigentlich die günstigere Variante von den beiden.(bei mir etwas anders konfiguriert) Ich finde Azure aber einfach zu benützen als AWS. Jedoch denke ich es kommt auf den User, die Erfahrung und die Präferenzen an. Beim Vergleich von Zoho und Salescloud ist Zoho billiger. Wie schon erwähnt würde ich persönlich aber trotzdem Salescloud wählen da es erweiterte Funktionalitäten bietet. 
 
 Wieso ist eines davon viel teurer? Ist es aber wirklich teurer?
+Bei mir ist AWS erstaunlich teuer, obwohl es eigenlich billiger sein sollte. Ich denke ich habe etwas bei der konfiguration vergessen oder anderst gemacht. Azure lieg bei 222 CHF aufgerundet pro Monat. Heroku ist etwas teurer mit 325 Dollar und zu letzt noch SalesCloud was einiges teurer ist als CRM Zoho.
