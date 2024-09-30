@@ -23,3 +23,7 @@ einfach nur die beiden IPs als Text.
 ![Screenshot Instanzen Namen](Sicherheitsgruppen.png)
 ![Inbound-DB-Server](Inbound-DBServer.png)
 ![Inbound-Web-Server](Inbound-Webserver.png)
+
+
+### Öffentliche, statische IP
+![Elastic IP](Elastic-IP.png)
