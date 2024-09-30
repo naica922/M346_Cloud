@@ -12,7 +12,8 @@
 
 ### Lösung
 Schätzung:
-![Estimate Rehosting](Estimate_Rehosting.png)
+![Estimate Rehosting AWS](Estimate_Rehosting.png)
+![Estimate Rehosting Azure](Estimate_Rehosting_Azure.png)
 
 Erklärung:
 Wegen dem Geld habe ich mich entschieden Instanzen zu benutzen die geteilt werden. 
