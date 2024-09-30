@@ -46,28 +46,22 @@ Schätzung:
 ![Zoho](Zoho.png)
 
 Erklärung:
-Ich nehme Zoho, weil es günstiger ist.
-Für mich als nutzer macht es auch den Eindruck, als wäre es benutzerfreundlicher.
+Ich würde mich vorab noch über die Nachteile/Vorteile von Salescloud und CRM informieren, sowie einige Kundenbewertungen anschauen. Ich gehe davon aus, dass beides gute Tools sind jedoch haben beide warscheinlich noch andere Funktionen. Was auch wichtig wäre für mich, ist das ich im Internet Resourcen zu Fragen finde falls etwas unklar ist oder nicht so funktioniert wie ich es will.
+Vom Preis her entscheide ich mich trotz dem höheren Preis aber für Salescloud da es eine bessere Skalierungsmöglichkeit bietet. Ausserdem will ich eher auf Qualität achten anstatt auf den Preis.
 
-Ich nehme .. weil es am billgsten ist. Man muss jedoch den Aufwand beachten.
+Gegenüberstellung der SaaS-Lösung zu IaaS und PaaS Lösungen von vorher. Welches wählen Sie und wieso? Was müsste man zusätzlich beachten?:
+Wenn man sich mit Techik nicht gut auskennt und schnell eine gute Lösung braucht, ist SaaS (Zoho oder Salesforce) die richtige Lösung. Updates, Wartung und Sicherheit werden vom Anbieter übernommen, was den Verwaltungsaufwand minimiert. Je nachdem wie viel Budget würde man Zoho wählen wenn man eher weniger hat. Salesforce hat mehr flexiblität und eine grössere Auswahl an Funktionen.
 
-Gegenüberstellung der SaaS-Lösung zu IaaS und PaaS Lösungen von vorher. Welches wählen Sie und wieso? Was müsste man zusätzlich beachten?
-SaaS (Zoho CRM oder Salesforce Sales Cloud):
-Es muss keine Infrastruktur verwaltet werden. Wenn Man SaaS verwendet, muss man keine Infrastruktur verwalten was ein grosser Vorteil ist. CRM kann man direkt einsetzen ohne mehr zu konfigurieren. Updates, Wartung und Sicherheit werden vom Anbieter übernommen, was den Verwaltungsaufwand minimiert. Diese Lösung ist für Unternehmen sinnvoll, die sich auf ihre Kernkompetenzen konzentrieren möchten, anstatt sich mit IT-Infrastruktur oder Entwicklungsaufgaben zu beschäftigen.
+Wenn man Iaas wählt auf AWS oder Azure dann ist man für die Verwaltung der Infrastruktur, auch die Wartung von Servern, Netzwerk, Speicher und VMs. Das hat den Vorteil das man mehr Flexibilität und Kontrolle hat. Dazu braucht man aber auch das Verständnis.  Es wäre nicht ideal, ein CRM-System auf IaaS zu betreiben, da es zusätzlichen Verwaltungsaufwand verursacht und weniger effizient ist.
 
-IaaS (Rehosting auf AWS oder Azure):
-Bei IaaS ist das Unternehmen für die Verwaltung der Infrastruktur verantwortlich, einschließlich der Wartung von Servern, Netzwerken, Speicher und virtuellen Maschinen. Dies bietet mehr Flexibilität und Kontrolle, erfordert jedoch ein höheres Maß an IT-Ressourcen und Expertise. Es wäre nicht ideal, ein CRM-System auf IaaS zu betreiben, da es zusätzlichen Verwaltungsaufwand verursacht und weniger effizient ist.
+Man kann auch PaaS wählen z.B Heroku was eine bessere Wahl ist als IaaS. Das wenn es um die Entwicklung von eigenen Anwendungen geht, weil es die Infrastuktur verwaltet und dem Entwicklungsteam mehr Freiheiten bietet .Allerdings ist eine CRM-Lösung als SaaS die naheliegendere Wahl, da es keinen Bedarf gibt, ein CRM von Grund auf neu zu entwickeln. Die Implementierung eines CRM als PaaS-Anwendung wäre unnötig komplex und ressourcenintensiv.
 
-PaaS (Heroku):
-PaaS ist eine bessere Wahl als IaaS, wenn es um die Entwicklung und Bereitstellung von eigenen Anwendungen geht, da es die Infrastruktur verwaltet und dem Entwicklungsteam mehr Freiheiten gibt. Allerdings ist eine CRM-Lösung als SaaS die naheliegendere Wahl, da es keinen Bedarf gibt, ein CRM von Grund auf neu zu entwickeln. Die Implementierung eines CRM als PaaS-Anwendung wäre unnötig komplex und ressourcenintensiv.
-
-Zusammenfassung:
-Die SaaS-Lösung ist die beste Wahl für das Unternehmen in Bezug auf das CRM. Sie erfordert weniger administrativen Aufwand, ist kosteneffizient und skalierbar. IaaS und PaaS wären hier überdimensioniert und unnötig kompliziert. Zusätzliche Punkte, die beachtet werden müssen, sind Datensicherheit und Datenschutz. Bei der Auswahl des SaaS-Anbieters sollte geprüft werden, wie mit sensiblen Kundendaten umgegangen wird und ob der Anbieter den Anforderungen der Datenschutzgrundverordnung (DSGVO) gerecht wird.
 
 # Interpretation der Resultate 20%
 wie stark unterscheiden sich die Angebote?
-Die Angebote unterscheiden sich im Preis sehr, auf einigen Webseiten war es zusätzlich sehr mühsam 
+Die Angebote unterscheiden sich im Preis sowohl war es auf einigen Webseiten war es zusätzlich sehr mühsam die Sachen zu konfigurieren und die Websweite zu benutzen. Auch die Funktionen, Erweiterungen etc. sind bei den verschiedenen Angeboten unterschiedlich. Natürlich auch der Zeitaufwand, welcher mehr oder weniger sein kann je nach dem wie viel Budget man hat und was man für eine Art wählt.
 
-Welches ist das billigste?
+Welches ist das billigste/teurere normalerweise?
+Beim Vergleich von AWS und Azure ist AWS die günstigere Variante von den beiden. Ich finde Azure auch einfach zu benützen als AWS. Jedoch denke ich es kommt auf den User, die Erfahrung und die Präferenzen an. Beim Vergleich von Zoho und Salescloud ist Zoho billiger. Wie schon erwähnt würde ich persönlich aber trotzdem Salescloud wählen da es erweiterte Funktionalitäten bietet. 
 
 Wieso ist eines davon viel teurer? Ist es aber wirklich teurer?
