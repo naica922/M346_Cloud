@@ -41,7 +41,18 @@ Zusätzlich habe ich den Performance M Dyno gewählt, da nur dieser der nötigen
 - Firma 16 Mitarbeiter die CRM System benutzen werden
 
 ### Lösung
+Schätzung:
+![Sales](SalesForce.png)
+![Zoho](Zoho.png)
 
+Erklärung:
+Ich nehme Zoho, weil es günstiger ist.
+Für mich als nutzer macht es auch den Eindruck, als wäre es benutzerfreundlicher.
 
 
 # Interpretation der Resultate 20%
+wie stark unterscheiden sich die Angebote?
+
+Welches ist das billigste?
+
+Wieso ist eines davon viel teurer? Ist es aber wirklich teurer?
