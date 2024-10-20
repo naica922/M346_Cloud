@@ -37,3 +37,4 @@ einfach nur die beiden IPs als Text.
 
 ![index.html](image-5.png)
 ![info.php](image-6.png)
+
