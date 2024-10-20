@@ -31,3 +31,6 @@ einfach nur die beiden IPs als Text.
 ### Instanzen erstellen
 ![Instanzen started](image-1.png)
 ![Instanzen stopped](image-2.png)
+
+![Instanz Subnet DB](image-3.png)
+![Instanz Subnet Web](image-4.png)
