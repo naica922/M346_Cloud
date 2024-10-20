@@ -15,8 +15,8 @@ Auf englisch Subnet bezeichnet Subnetz innerhalb der VPC. Man kann auch sagen es
 
 - Zwei definierte IPs für Web- und DB-Server/Instanz. Dazu braucht es keinen Screenshot,
 einfach nur die beiden IPs als Text.
-1. IP: 172.31.85.50
-2. IP: 172.31.20.100
+1. IP: 172.31.80.20 (Datenbank)
+2. IP: 172.31.80.10 (Webserver)
 
 
 ### C) Objekte und Instanzen erstellen (80%)
@@ -27,3 +27,7 @@ einfach nur die beiden IPs als Text.
 
 ### Öffentliche, statische IP
 ![Elastic IP](Elastic-IP.png)
+
+### Instanzen erstellen
+![Instanzen started](image-1.png)
+![Instanzen stopped](image-2.png)
