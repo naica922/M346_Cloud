@@ -2,6 +2,8 @@
 
 ### A) Diagramm erstellen (10%)
 
+![Diagram](image-8.png)
+
 Was ist ein VPC:
 VPC steht für Virtual Private Cloud und bezeichnet das eigene interne Netzwerk innerhalb des Anbieters. Ein Beispiel für solch ein VPC könnte 172.1.0.0/16 sein.
 
