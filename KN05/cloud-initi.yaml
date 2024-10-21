@@ -1,0 +1,15 @@
+#cloud-config #gibt an, dass Datei cloud init konfigurationsdatei in ymal form ist
+users: #legt benutzer fest, welche auf system konfiguriert werden
+  - name: ubuntu #benutzer mit namen ubuntu erstellt oder konfiguriert
+    sudo: ALL=(ALL) NOPASSWD:ALL #unbuntu uneingeschränkte sudo rechte, kein passwort
+    groups: users, admin #ubuntu zu gruppen users und admin added
+    home: /home/ubuntu #home directory von ubuntu auf diesem Pfad
+    shell: /bin/bash #Standart shell für benutzer
+    ssh_authorized_keys: #liste von ssh keys fpr authentifizierung über ssh verwendet
+      - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC0WGP1EZykEtv5YGC9nMiPFW3U3DmZNzKFO5nEu6uozEHh4jLZzPNHSrfFTuQ2GnRDSt+XbOtTLdcj26+iPNiFoFha42aCIzYjt6V8Z+SQ9pzF4jPPzxwXfDdkEWylgoNnZ+4MG1lNFqa8aO7F62tX0Yj5khjC0Bs7Mb2cHLx1XZaxJV6qSaulDuBbLYe8QUZXkMc7wmob3PM0kflfolR3LE7LResIHWa4j4FL6r5cQmFlDU2BDPpKMFMGUfRSFiUtaWBNXFOWHQBC2+uKmuMPYP4vJC9sBgqMvPN/X2KyemqdMvdKXnCfrzadHuSSJYEzD64Cve5Zl9yVvY4AqyBD aws-key    #öffentlicher ssh key in RSA format   
+ssh_pwauth: false #aktiviert authentifizierung per password über ssh deaktivieren
+disable_root: false #root benutzer nicht deaktiviert (normalerweise schon)
+package_update: true #upadte paketquellen damit neuste version
+packages: #liste von paketen während instanzkonfiguration downloaded
+  - curl #paket für kommandozeilenwerkzeug
+  - wget #pakert für herunterladen von dateien über netzwerk
