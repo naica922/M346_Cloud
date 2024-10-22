@@ -3,6 +3,7 @@
 ### A) Cloud-init Datei Verstehen (10%)
 In seperatem Dokument (cloud-init-comments.yaml)
 
+
 ### B) SSH-Key und Cloud-init (15%)
 Command für extrahierung:
 ```
@@ -34,7 +35,17 @@ Auszug cloud-init-log
  ```
 ![cloud-init-log](image-4.png)
 
+
 ### C) Template (5%)
+Template file name: cloud-init-C.yaml
 
 
 ### D) Installation automatisieren (70%)
+info.php
+![info.php](image-5.png)
+
+db.php
+![db.php](image-6.png)
+
+index.html
+![index.html](image-7.png)
