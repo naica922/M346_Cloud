@@ -1,0 +1,88 @@
+#cloud-config
+users:
+  - name: ubuntu
+    sudo: ALL=(ALL) NOPASSWD:ALL
+    groups: users, admin
+    home: /home/ubuntu
+    shell: /bin/bash
+    ssh_authorized_keys:
+      - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDCXqz4+YoUnc5pJ5OgYExANAgm7yv3gJnJzo8otE/DQOAMouxYi6y/9eGNcUj2G23QxVJtm+DEzMEPWOc6cOy+7lmM7OEP7jmX1m9olVHOjxReCDqxEd5u2/A3Tawq7jfgIiakJcFztbAG9E5KoVfy5nU0CZvm4DObsaJ5Fy/ZbH14McdLAVxZK+QtjeSfAAUy121CvzvzwsScfhf8dbgZTHZ2CH3zsn8jx68CbgH7gibnZEy/sJNBzkcbZeUgAEfccHtQkwRnwWfWE6XMhyh6sqcIYU0T2EsXsG49IAqtgKseIu3tlQ1HotBLX9+77tQ6XA4UHy+IltgpYXkj1Icx aws-key
+      - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCwuSNRSGNl7xKj+tdUQUmhpVu9VRPnBbs/rUxpJCo+lGTRB4MGS1me0dpybkfpHPs7inJhdj0X80Ja/APEBf4WByVH59Wr37zrrKbYO7DfbtVrcXjixIzPe2a7ADCgSMDMELhbCCwHMcl+8Uq97ky0Vq4pP3zeOVDwJ5JQpPqj+nPkJPOEsxZXpMOI3Swekgo++oV7Eitjqfayfvv3vV58pDt3mxrdfVXBrZAlNzzoSeGXSevHOwzw/OU65R3hVO8HbY8OgJ4CRRSsUX6tZV7u4aX5JOXTahEwlcLJYof7na+Z0F9sCYf5y9gO98QguEmFc+b4ewFrDaHW47Qi+P0h aws-key
+ssh_pwauth: true
+disable_root: false
+package_update: true
+packages:
+  - curl
+  - wget
+  - nginx
+  - openjdk-17-jre-headless
+write_files:
+  - content: >
+      [Unit]
+
+      Description=Demo Shop
+
+      After=syslog.target
+
+      [Service]
+
+      WorkingDirectory=/var/www/app
+
+      User=www-data
+
+      ExecStart=java -jar /var/www/app/shopdemo-1.0.0.jar --spring.config.additional-location=/var/www/app/production.properties SuccessExitStatus=143 
+
+      Restart=always
+
+      RestartSec=10
+
+      [Install] 
+
+      WantedBy=multi-user.target
+    path: /etc/systemd/system/shop-app.service
+  - content: |
+      server {
+        listen        80;
+        server_name   default;
+        location / {
+          proxy_pass         http://127.0.0.1:5001;
+          proxy_http_version 1.1;
+          proxy_set_header   Upgrade $http_upgrade;
+          proxy_set_header   Connection keep-alive;
+          proxy_set_header   Host $host;
+          proxy_cache_bypass $http_upgrade;
+          proxy_set_header   X-Forwarded-For $proxy_add_x_forwarded_for;
+          proxy_set_header   X-Forwarded-Proto $scheme;
+        }
+      }
+    path: /home/ubuntu/nginx
+runcmd:
+  - sudo git clone https://gitlab.com/ch-tbz-it/Stud/m346/m346scripts.git
+    /home/ubuntu/m346scripts
+  - sudo git -C /home/ubuntu/m346scripts checkout v4.1
+  - sudo wget -qO- https://www.mongodb.org/static/pgp/server-6.0.asc | sudo tee
+    /etc/apt/trusted.gpg.d/server-6.0.asc
+  - sudo echo "deb [ arch=amd64,arm64 ] https://repo.mongodb.org/apt/ubuntu
+    jammy/mongodb-org/6.0 multiverse" | sudo tee
+    /etc/apt/sources.list.d/mongodb-org-6.0.list
+  - sudo apt-get update
+  - sudo apt-get install -y mongodb-mongosh
+  - mongosh
+    "mongodb+srv://admin:password1234@clusternaimakn06.ejrv1.mongodb.net/"
+    --u admin -p password <
+    /home/ubuntu/m346scripts/KN06/shop-database-mongodb.txt
+  - sudo mkdir /var/www
+  - sudo mkdir /var/www/app
+  - sudo sed -i
+    's/<clusterUrl>/clusternaimakn06.ejrv1.mongodb.net/g'
+    /home/ubuntu/m346scripts/KN06/java/production.properties
+  - sudo sed -i 's/<username>/admin/g'
+    /home/ubuntu/m346scripts/KN06/java/production.properties
+  - sudo sed -i 's/<password>/password1234/g'
+    /home/ubuntu/m346scripts/KN06/java/production.properties
+  - sudo cp -r /home/ubuntu/m346scripts/KN06/java/* /var/www/app/
+  - sudo systemctl enable shop-app.service
+  - sudo systemctl start shop-app.service
+  - sudo service nginx start
+  - sudo cp /home/ubuntu/nginx /etc/nginx/sites-available/default
+  - sudo nginx -s reload
