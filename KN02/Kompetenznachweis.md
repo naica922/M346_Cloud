@@ -28,7 +28,7 @@
 ![Static Website Hosting](image-8.png)
 
 ### JSON Datei mit der Bucket-Policy für den öffentlichen Zugriff
-- Im Gitlab
+Im Gitlab
 
 ### Screenshot mit dem ssh-Befehl und des Resultats unter Verwendung des ersten Schlüssels
 ![First Key](image-9.png)
