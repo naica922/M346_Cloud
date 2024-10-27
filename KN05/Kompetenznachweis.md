@@ -17,19 +17,19 @@ Extrahierung Keys
 Key konfiguration Instanz
 ![Key konfiguration](image-1.png)
 
-1. Private Key
+1. Private Key<br>
 ```
 ssh -i Naima05-1.pem ubuntu@ec2-54-237-35-244.compute-1.amazonaws.com
 ```
 ![private key 05-1](image-2.png)
 
-2. Private Key
+2. Private Key<br>
 ```
 ssh -i Naima05-2.pem ubuntu@ec2-54-237-35-244.compute-1.amazonaws.com
 ```
 ![private key 05-2](image-3.png)
 
-Auszug cloud-init-log
+Auszug cloud-init-log<br>
 ```
  sudo cat /var/log/cloud-init-output.log
  ```
@@ -39,15 +39,14 @@ Auszug cloud-init-log
 ### C) Template (5%)
 Template file name: cloud-init-C.yaml
 
-
 ### D) Installation automatisieren (70%)
-info.php
+info.php<br>
 ![info.php](image-5.png)
 
-db.php
+db.php<br>
 ![db.php](image-6.png)
 
-index.html
+index.html<br>
 ![index.html](image-7.png)
 
 admirer
