@@ -29,8 +29,25 @@ Erklärungen zur Auswahl für alle Bereiche:
 ### B) Erstellte Ressourcen/Objekte und CloudFormation (20%)
 Erklärung Cloud Formation:
 
-Unterschied Cloud-Init (beides automatisierungen?):
+Screenshots EC2 Objekte und CloudFormation Ressourcen für PAAS Anwendung:
 
-Screenshots EC2 Objekte:
+Cloud Formation
+![Cloud Formation](image-6.png)
 
-Screenshot Cloudformation Resosurcen für PAAS Anwendung:
+Instanz
+![Instance 1](image-7.png)
+![Instanz 2](image-8.png)
+
+Auto Scaling
+![Auto Scaling](image-9.png)
+
+Load Balancer
+![Load Balancer](image-11.png)
+
+Stacks 
+![Stacks](image-12.png)
+
+Target Group
+![Target Group](image-13.png)
+
+Erklärung CloudFormation. Unterschied Cloud-Init (beides automatisierungen?):
