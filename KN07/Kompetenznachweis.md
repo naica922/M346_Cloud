@@ -8,24 +8,22 @@ Erklären Sie wieso Sie besser einen PAAS oder SAAS Service verwenden anstatt ei
 Es ist besser einen PAAS oder SAAS Service zu brauchen, weil es weniger kostet da man keine überwachung von den Datenbank braucht und auch keine teure Hardware anschaffen muss. Ein anderer Vorteil ist, dass man einfach skalieren und die ressourcen nach dem Bedarf anpassen. Die Sicherheit ist ebenso erhöht und man ist viel flexibler.
 
 ### B) PAAS Applikation erstellen (60%)
-Screenshots für alle Bereiche auf allen Seiten:
+Screenshots für alle Bereiche auf allen Seiten:<br>
 
-Konfigurieren der Umgebung
+Konfigurieren der Umgebung<br>
 ![Schritt 1](image-1.png)
 
-Konfigurieren des Servicezugriffs
+Konfigurieren des Servicezugriffs<br>
 ![Schritt 2](image-2.png)
 
-Einrichten von Netzwerk, Datenbank und Tags
+Einrichten von Netzwerk, Datenbank und Tags<br>
 ![Schritt 3](image-3.png)
 
-Konfigurieren des Instance-Datenverkehrs und der Skalierung
+Konfigurieren des Instance-Datenverkehrs und der Skalierung<br>
 ![Schritt 4](image-4.png)
 
-Konfigurieren von Updtaes, Überwachung und Protokollierung
+Konfigurieren von Updtaes, Überwachung und Protokollierung<br>
 ![Schritt 5](image-5.png)
-
-Erklärungen zur Auswahl für alle Bereiche:
 
 ### B) Erstellte Ressourcen/Objekte und CloudFormation (20%)
 Erklärung Cloud Formation:<br>
