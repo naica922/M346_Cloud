@@ -4,20 +4,20 @@
 Kurze Erklärung in eigenen Worten was ein Reverse Proxy ist:<br>
 Ein Reverse Proxy sendet eine Anfrage an eine Webseite. Diese Anfrage trifft dan auf den Reverse Proxy welcher die Snfrage analysiert und an den Backend-Server weiterleitet. Das backend bearbeitet dan die anfrage und sendet die Antwort an den Reverse Proxy. Dieser gibt die Antwort an den Benutzer. Ein reverse proxy ist ähnlich wie DNS. Er dient sozusagen zum routen und man kann selber konfigurieren wer auf was zugreiffen dart.
 
-Swagger
+Swagger<br>
 ![Swagger](image-8.png)
 
-Shop Items
+Shop Items<br>
 ![shop data](image-3.png)
 
-Endpoint
+Endpoint<br>
 ![Endpoint](image-9.png)
 
 ### B) Vertikale Skalierung  (10%)
-Volume vor der Änderung
+Volume vor der Änderung<br>
 ![before volume](image-1.png)
 
-Volume nach der Änderung
+Volume nach der Änderung<br>
 ![after volume 20gb](image-5.png)
 
 Geht dies im laufenden Betrieb?<br>
@@ -30,14 +30,14 @@ Schritte die notwendig waren:<br>
 4. Bei den Optionen im dropdown das gewollte volume
 5. Speichern
 
-Instanztyp Änderung
+Instanztyp Änderung<br>
 ![Instance medium type](image-6.png)
 
 ### C) Horizontale Skalierung (20%)
 Wie müssten Sie den DNS konfigurieren, damit die Applikaiton unter URL app.tbz-m346.ch ist?<br>
 Damit das möglich ist, muss man einen A-record machen. Das würde die URL von der TBZ mit dem Load balancer DNS von mit verbinden.
 
-Screenshot Swagger-Aufruf über LoadBalancer URL
+Screenshot Swagger-Aufruf über LoadBalancer URL<br>
 ![Loadbalancer Swagger](image-7.png)
 
 ![Health Checks](image-12.png)
