@@ -11,23 +11,23 @@ Es ist besser einen PAAS oder SAAS Service zu brauchen, weil es weniger kostet d
 Screenshots für alle Bereiche auf allen Seiten:<br>
 
 Konfigurieren der Umgebung<br>
-Webserver Umfeld, weil es über das Internet erreichbar sein sollte. Java unterstützende Plattform. Name der Applikation passend zu KN07 gewählt.
+Webserver Umfeld, weil es über das Internet erreichbar sein sollte. Java unterstützende Plattform. Name der Applikation passend zu KN07 gewählt.<br>
 ![Schritt 1](image-1.png)
 
 Konfigurieren des Servicezugriffs<br>
-Ich habe die default role gwwählt, damit die instanz alle nötigen berechtigungen hat. Kei Pair spielt keine Rolle, ich hätte auch 2 wählen können.
+Ich habe die default role gwwählt, damit die instanz alle nötigen berechtigungen hat. Kei Pair spielt keine Rolle, ich hätte auch 2 wählen können.<br>
 ![Schritt 2](image-2.png)
 
 Einrichten von Netzwerk, Datenbank und Tags<br>
-Öffentliche IP, damit der Server übers Internet erreichbar ist. Subnetze, damit die Datenbankverbindungen innerhalb vom Netzwerk sicher bleiben. 
+Öffentliche IP, damit der Server übers Internet erreichbar ist. Subnetze, damit die Datenbankverbindungen innerhalb vom Netzwerk sicher bleiben. <br>
 ![Schritt 3](image-3.png)
 
 Konfigurieren des Instance-Datenverkehrs und der Skalierung<br>
-Min und max EC2 instanzen definiert, damit es skalierbat ist. Dies stellt sicher, dass bei schwankendem Traffic automatisch zusätzliche Ressourcen bereitgestellt werden, um die Last zu bewältigen.
+Min und max EC2 instanzen definiert, damit es skalierbat ist. Dies stellt sicher, dass bei schwankendem Traffic automatisch zusätzliche Ressourcen bereitgestellt werden, um die Last zu bewältigen.<br>
 ![Schritt 4](image-4.png)
 
 Konfigurieren von Updtaes, Überwachung und Protokollierung<br>
-Updates aktiviert, damit man sicherstellen kan, dass alle Sicherheits und Leistungsverbesserungen so schnell wie möglich gemacht werden. Logging nicht nötig momentan.
+Updates aktiviert, damit man sicherstellen kan, dass alle Sicherheits und Leistungsverbesserungen so schnell wie möglich gemacht werden. Logging nicht nötig momentan.<br>
 ![Schritt 5](image-5.png)
 
 ### B) Erstellte Ressourcen/Objekte und CloudFormation (20%)
