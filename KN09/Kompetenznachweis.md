@@ -64,7 +64,7 @@ aws ec2 associate-route-table --subnet-id subnet-0abcd1234EXAMPLE --route-table-
 
 8. Sicherheitsgruppe erstellen
 ```
-aws ec2 create-security-group --group-name sg-kn05 --description "Security Group for KN09" --vpc-id vpc-081ec835f3EXAMPLE
+aws ec2 create-security-group --group-name sg-kn05 --description "Security Group for KN05" --vpc-id vpc-081ec835f3EXAMPLE
 ```
 
 9. Regel für eingehenden Datenbankverkehr hinzufügen
@@ -84,3 +84,4 @@ terraform apply
 ```
 
 ### C) Beliebige Erweiterungen
+optional
