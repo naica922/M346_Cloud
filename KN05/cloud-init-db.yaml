@@ -2,7 +2,11 @@
 package_update: true
 packages:
   - mariadb-server
- 
+ssh_authorized_keys:
+      #My Key
+      - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCwuSNRSGNl7xKj+tdUQUmhpVu9VRPnBbs/rUxpJCo+lGTRB4MGS1me0dpybkfpHPs7inJhdj0X80Ja/APEBf4WByVH59Wr37zrrKbYO7DfbtVrcXjixIzPe2a7ADCgSMDMELhbCCwHMcl+8Uq97ky0Vq4pP3zeOVDwJ5JQpPqj+nPkJPOEsxZXpMOI3Swekgo++oV7Eitjqfayfvv3vV58pDt3mxrdfVXBrZAlNzzoSeGXSevHOwzw/OU65R3hVO8HbY8OgJ4CRRSsUX6tZV7u4aX5JOXTahEwlcLJYof7na+Z0F9sCYf5y9gO98QguEmFc+b4ewFrDaHW47Qi+P0h aws-key
+       # Public Key Nussle
+      - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC0WGP1EZykEtv5YGC9nMiPFW3U3DmZNzKFO5nEu6uozEHh4jLZzPNHSrfFTuQ2GnRDSt+XbOtTLdcj26+iPNiFoFha42aCIzYjt6V8Z+SQ9pzF4jPPzxwXfDdkEWylgoNnZ+4MG1lNFqa8aO7F62tX0Yj5khjC0Bs7Mb2cHLx1XZaxJV6qSaulDuBbLYe8QUZXkMc7wmob3PM0kflfolR3LE7LResIHWa4j4FL6r5cQmFlDU2BDPpKMFMGUfRSFiUtaWBNXFOWHQBC2+uKmuMPYP4vJC9sBgqMvPN/X2KyemqdMvdKXnCfrzadHuSSJYEzD64Cve5Zl9yVvY4AqyBD aws-key 
 runcmd:
   - sudo sed -i 's/127.0.0.1/0.0.0.0/g' /etc/mysql/mariadb.conf.d/50-server.cnf
   - sudo systemctl restart mariadb
